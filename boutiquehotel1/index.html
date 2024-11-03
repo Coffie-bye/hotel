@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Boutique Hotel</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        /* Basic reset */
+        body, h1, h2, h3, p, ul, li, input, textarea, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+        /* Header styling */
+        header {
+            background: #333;
+            padding: 20px;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #444;
+        }
+        /* Hero section */
+        #home {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        #home button {
+            background-color: #f04e30;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        #home button:hover {
+            background-color: #d43c1d;
+        }
+        /* Section styling */
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .room-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .room img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        /* Contact form styling */
+        form input, form textarea, form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1rem;
+            border: none;
+            transition: background 0.3s;
+        }
+        form button:hover {
+            background-color: #444;
+        }
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+        }
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            #home {
+                padding: 50px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#dining">Dining</a></li>
+                <li><a href="#event">Event</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero section -->
+        <section id="home">
+            <h1>Welcome to Serenity Boutique Hotel</h1>
+            <p>Escape to luxury</p>
+            <button onclick="window.location.href='booking.html'">Book Now</button>
+
+        </section>
+
+        <!-- Rooms section -->
+        <section id="rooms">
+            <h2>Our Rooms</h2>
+            <div class="room-grid">
+                <div class="room">
+                    <h3>Deluxe Room</h3>
+                    <p>King-size bed, en-suite bathroom</p>
+                    <img src="OIP (2).jpeg" alt="Deluxe Room">
+                </div>
+                <div class="room">
+                    <h3>Suite</h3>
+                    <p>Separate living area, en-suite bathroom</p>
+                    <img src="bangkok-thailand-august-12-2016-beautiful-luxury-living-room.jpg" alt="Suite">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services section -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Spa and wellness service</li>
+                <li>Fitness center</li>
+                <li>Business center</li>
+                <li>Concierge service</li>
+            </ul>
+        </section>
+
+        <!-- Dining section -->
+        <section id="dining">
+            <h2>Dining</h2>
+            <p>Restaurant, bar, and room service</p>
+            <img src="dining 1.jpeg"alt="dining">
+            <img src="dining 2.jpeg"alt="dining">
+            <img src="dining 3.jpeg" alt="dining">
+            <img src="dining4.jpeg"alt="dining">
+        </section>
+
+        <!-- Event section -->
+        <section id="event">
+            <h2>Event</h2>
+            <p>Weddings, meetings, and conferences</p>
+            <img src="download (1).jpeg"alt="event">
+            <img src="download (2).jpeg"alt="event">
+            <img src="download (4).jpeg"alt="event">
+        </section>
+
+        <!-- Location section -->
+        <section id="location">
+            <iframe src="https://www.google.com/maps/embed?..." frameborder="0" style="border:0; width: 100%; height: 400px;"></iframe>
+       </section>
+
+        <!-- Location section -->
+         <section id="About">
+            <p>A hotel receptionist, also known as a front desk receptionist, is a customer service professional who ensures guests have a pleasant stay at a hotel. Their responsibilities include: 
+                Greeting guests: Welcoming guests and checking their details against their bookings 
+                Assigning rooms: Allocating rooms and suites to guests and providing keys 
+                Managing reservations: Handling reservations and booking information by phone, online, or in person 
+                Answering questions: Answering questions from guests and prospective customers 
+                Processing payments: Processing credit card transactions for lodging, room service, and other hotel costs 
+                Checking guests out: Checking guests out, taking payments, and returning deposits 
+                Providing information: Providing information about hotel facilities and services, local amenities, and attractions 
+                Handling requests: Handling special requests from guests, like booking theater tickets or storing valuable items 
+                Dealing with complaints: Dealing with complaints or problems 
+                Maintaining records: Maintaining accurate records of guest charges and updating hotel records </p>
+        </section>
+    
+
+        <!-- Contact section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="contact" placeholder="Contact">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Serenity Boutique Hotel</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
